@@ -1,0 +1,6 @@
+API -> 210c739260fbd808fa8deb41feffa8c2
+
+READ ACCESS TOKEN -> eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMTBjNzM5MjYwZmJkODA4ZmE4ZGViNDFmZWZmYThjMiIsInN1YiI6IjY1MWQwYjllNzQ1MDdkMDBjNTc5OTFhMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FZOdElCYd4tHoZBCG4IqHBgr4Z_cxE0LdBBIcO_MN5Q
+
+
+search_query = request.form['movie_title']

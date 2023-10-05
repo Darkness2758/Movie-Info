@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="movie-details">
+            <h2>{{ movie_details['title'] }}</h2>
+            <p class="release-date">Release Date: {{ movie_details['release_date'] }}</p>
+            <p class="rating">Rating: {{ movie_details['vote_average'] }}/10</p>
+            <p class="overview"><strong>Overview:</strong> {{ movie_details['overview'] }}</p>
+            <p class="genre"><strong>Genre:</strong> {{ movie_details['genres'] }}</p>
+            <p class="runtime"><strong>Runtime:</strong> {{ movie_details['runtime'] }} min</p>
+            <p class="director"><strong>Director:</strong> {{ movie_details['profile director'] }}</p>
+            <p class="cast"><strong>Cast:</strong> {{ movie_details['percent icon'] }}</li>
+            <p class="revenue"><strong>Revenue:</strong> $ {{ movie_details['revenue'] }}</p>
+            <p class="box-office"><strong>Box Office:</strong> $ {{ movie_details['budget'] }}</p>
+            <p class="tagline"><strong>Tag Line:</strong> {{ movie_details['tagline'] }}</p>
+            <p class="awards"><strong>Awards:</strong> {{ movie_details['play_trailer'] }}</p>
+            <img src="https://image.tmdb.org/t/p/w500{{ movie_details['poster_path'] }}" alt="{{ movie_details['title'] }} Poster">
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
+
